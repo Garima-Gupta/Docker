@@ -1,0 +1,15 @@
+Common Dockerfile instructions start with RUN, ENV, FROM, MAINTAINER, ADD, and CMD, among others.
+
+FROM - Specifies the base image that the Dockerfile will use to build a new image. For this post, we are using phusion/baseimage as our base image because it is a minimal Ubuntu-based image modified for Docker friendliness.
+
+MAINTAINER - Specifies the Dockerfile Author Name and his/her email.
+
+RUN - Runs any UNIX command to build the image.
+
+ENV - Sets the environment variables. For this post, JAVA_HOME is the variable that is set.
+
+CMD - Provides the facility to run commands at the start of container. This can be overridden upon executing the docker run command.
+
+ADD - This instruction copies the new files, directories into the Docker container file system at specified destination.
+
+EXPOSE - This instruction exposes specified port to the host machine.
